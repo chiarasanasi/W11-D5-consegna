@@ -1,0 +1,61 @@
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+.bg-navbar {
+  background-color: #2c2c2c;
+}
+.bg-logo {
+  background-color: #4d4d4d;
+}
+
+.bg-red {
+  background-color: #d60017;
+}
+.bg-side {
+  background-color: #252526;
+}
+
+.red {
+  color: #d60017;
+}
+
+.custom-placeholder::placeholder {
+  color: grey !important;
+  padding-left: 10%;
+  font-size: 0.85em;
+}
+
+.text-grey {
+  color: #cccccd !important;
+}
+
+.text-mediumgrey {
+  color: #c0c0c0 !important;
+}
+
+.text-lightgrey {
+  color: #e7e7e7 !important;
+}
+
+.border-grey {
+  border: solid 1px grey !important;
+}
+
+@media (max-width: 576px) {
+  .bg-side {
+    background-color: #2e2e2e !important;
+  }
+}
+
+.bg-main {
+  background-color: #1f1f1f;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE e Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
