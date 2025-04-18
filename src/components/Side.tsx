@@ -6,6 +6,7 @@ import { FaTowerBroadcast } from "react-icons/fa6"
 import { FiHome } from "react-icons/fi"
 
 import { LuGrid2X2 } from "react-icons/lu"
+import "../App.css"
 
 const Side = function () {
   return (

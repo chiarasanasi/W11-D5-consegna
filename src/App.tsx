@@ -1,4 +1,5 @@
 import "./App.css"
+import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 import Novità from "./components/Novità"
 import NuoviEpisodi from "./components/NuoviEpisodi"
@@ -34,6 +35,7 @@ function App() {
             <Novità />
             <NuoviEpisodi artista="Pinguini Tattici Nucleari" />
             <NuoviEpisodi artista="Venerus" />
+            <Footer />
           </div>
         </Col>
       </Row>

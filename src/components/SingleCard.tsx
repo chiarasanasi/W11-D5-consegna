@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap"
 import { Song } from "../types"
+import "../App.css"
 
 interface SingleSongProps {
   song: Song

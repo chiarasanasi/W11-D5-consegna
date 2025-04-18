@@ -10,7 +10,7 @@ const Novità = function () {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
   }
 

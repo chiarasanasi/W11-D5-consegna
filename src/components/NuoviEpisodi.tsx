@@ -3,6 +3,7 @@ import { Spinner } from "react-bootstrap"
 import { Song } from "../types"
 import SingleCard from "./SingleCard"
 import Slider from "react-slick"
+import "../App.css"
 
 type NuoviEpisodiProps = {
   artista: string
@@ -15,6 +16,22 @@ const NuoviEpisodi = function ({ artista }: NuoviEpisodiProps) {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   }
 
   const urlApi = "https://striveschool-api.herokuapp.com/api/deezer/search?q="
@@ -52,7 +69,7 @@ const NuoviEpisodi = function ({ artista }: NuoviEpisodiProps) {
     <div className="bg-main text-light p-4 border-0">
       {isLoading ? (
         <div>
-          <Spinner animation="border" variant="success" />
+          <Spinner animation="border" variant="danger" />
         </div>
       ) : (
         <>
